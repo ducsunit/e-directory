@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_custom_dialog"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- Close Button -->
+    <ImageButton
+        android:id="@+id/imgCloseDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <!-- Image Word -->
+    <ImageView
+        android:id="@+id/imgDetails"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imgCloseDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bachtuoc" />
+
+    <!-- Sound Icon -->
+    <ImageView
+        android:id="@+id/imgSoundDetails"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/imgCloseDialog"
+        app:layout_constraintStart_toEndOf="@id/imgDetails"
+        app:layout_constraintBottom_toBottomOf="@id/imgDetails"
+        app:srcCompat="@drawable/loa" />
+
+    <!-- IPA -->
+    <TextView
+        android:id="@+id/txtIpaDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/font_main"
+        android:text="/ˈæŋk.tə.pəs/"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/imgDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Word -->
+    <TextView
+        android:id="@+id/txtWordDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/font_main"
+        android:text="Octopus"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtIpaDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Meaning -->
+    <TextView
+        android:id="@+id/txtMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/font_main"
+        android:text="Con bạch tuộc"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txtWordDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Example -->
+    <TextView
+        android:id="@+id/txtExample"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/font_main"
+        android:gravity="center"
+        android:text="The octopus can change its color."
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/txtMeaning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Example Translate -->
+    <TextView
+        android:id="@+id/txtExampleTranslate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/font_main"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Con bạch tuộc có thể thay đổi màu sắc."
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/txtExample"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <!-- Từ -->
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/font_main"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- IPA -->
+    <TextView
+        android:id="@+id/txtIPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/font_main"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWord" />
+
+    <!-- Biểu tượng âm thanh -->
+    <ImageView
+        android:id="@+id/imgSound"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/loa"
+        app:layout_constraintTop_toTopOf="@id/txtWord"
+        app:layout_constraintEnd_toStartOf="@id/imgHobby" />
+
+    <!-- Biểu tượng đánh dấu yêu thích -->
+    <ImageView
+        android:id="@+id/imgHobby"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/star_hobby"
+        app:layout_constraintTop_toTopOf="@id/txtWord"
+        app:layout_constraintEnd_toStartOf="@id/imgDelete" />
+
+    <!-- Biểu tượng xóa -->
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/delete"
+        app:layout_constraintTop_toTopOf="@id/txtWord"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Loại từ -->
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/font_main"
+        android:text="TextView"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txtIPA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nghĩa -->
+    <TextView
+        android:id="@+id/txtDefinition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/font_main"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txtType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

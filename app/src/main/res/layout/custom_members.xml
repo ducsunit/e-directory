@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/custom_list_members">
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/name_copy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/txtNameMember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_main"
+        android:text="@string/name_member"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/imgUser"
+        app:layout_constraintEnd_toStartOf="@id/imgVip"
+        app:layout_constraintTop_toTopOf="@id/imgUser"
+        app:layout_constraintBottom_toBottomOf="@id/imgUser"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <ImageView
+        android:id="@+id/imgVip"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/name_copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgUser"
+        app:layout_constraintBottom_toBottomOf="@id/imgUser"
+        app:srcCompat="@drawable/star_vip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

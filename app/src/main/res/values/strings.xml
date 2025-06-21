@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">E - Directory</string>
+    <string name="search">Tìm Kiếm</string>
+    <string name="vocabulary">Từ vựng</string>
+    <string name="copyright">Nhóm 1</string>
+    <string name="name_copy">Bản quyền thuộc về DucSunIT</string>
+    <string name="welcome_app">Welcome</string>
+    <string name="let_go">Let\'s Go</string>
+    <string name="hint_search">Search</string>
+    <string name="desc_login">Nếu như muốn sử dụng các tính năng nâng cao, vui lòng đăng nhập để nâng cấp tài khoản. Cảm ơn bạn đã sử dụng ứng dụng của chúng tôi !!</string>
+    <string name="btn_login">Đăng nhập bằng Google</string>
+    <string name="name_member">Name member</string>
+    <string name="title_login">Login</string>
+    <string name="name_subject">Name Subject</string>
+    <string name="title_vocabulary">Từ Vựng</string>
+    <string name="hobby_word">Từ yêu thích</string>
+    <string name="recent_word">Từ gần đây</string>
+    <string name="name_group">THÀNH VIÊN NHÓM</string>
+    <string name="name_word">Lion</string>
+    <string name="ipa">/ˈlaɪ.ən/</string>
+    <string name="title_animals">Động Vật</string>
+    <string name="title_voca">DucSunIT</string>
+    <string name="title_fruits">Hoa Quả</string>
+    <string name="title_toy">Đồ chơi</string>
+    <string name="title_travel">Du lịch</string>
+    <string name="title_family">Gia đình</string>
+    <string name="title_kitchen">Nhà bếp</string>
+    <string name="title_sports">Thể thao</string>
+    <string name="title_numbers">Số đếm</string>
+    <string name="hint_auto">Search...</string>
+    <string name="txt_word">Word</string>
+    <string name="txt_ipa">IPA</string>
+    <string name="txt_Type">Type</string>
+</resources>

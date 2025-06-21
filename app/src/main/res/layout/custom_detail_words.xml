@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Word -->
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_main"
+        android:text="Example"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgHobby"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <!-- IPA -->
+    <TextView
+        android:id="@+id/txtIPA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_main"
+        android:text="/ˈɛɡzæmpəl/"
+        android:textSize="18sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/txtWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgHobby"
+        app:layout_constraintBottom_toTopOf="@+id/txtType"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Icon Yêu thích -->
+    <ImageView
+        android:id="@+id/imgHobby"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Favorite"
+        app:srcCompat="@drawable/star_hobby"
+        app:layout_constraintTop_toTopOf="@+id/txtWord"
+        app:layout_constraintEnd_toStartOf="@id/imgSound"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIPA" />
+
+    <!-- Icon Âm thanh -->
+    <ImageView
+        android:id="@+id/imgSound"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Play Sound"
+        app:srcCompat="@drawable/loa"
+        app:layout_constraintTop_toTopOf="@+id/imgHobby"
+        app:layout_constraintBottom_toBottomOf="@+id/imgHobby"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Loại từ -->
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_main"
+        android:text="(n)"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textColor="#444"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/txtIPA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nghĩa -->
+    <TextView
+        android:id="@+id/txtDefinition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_main"
+        android:text="A representative form or pattern."
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/txtType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
