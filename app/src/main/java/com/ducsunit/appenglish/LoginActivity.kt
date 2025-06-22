@@ -31,21 +31,36 @@ class LoginActivity : AppCompatActivity() {
     * nút đăng nhập bằng tài khoản google
     * sẽ hiện ra một thông báo (AlertDialog)*/
     private fun handleClickBtnLogin() {
-        val loginGoogle = findViewById<Button>(R.id.btnLoginGoogle)
+        val loginGoogle = findViewById<ImageView>(R.id.imgGG)
+        val loginFacebook = findViewById<ImageView>(R.id.imgFacebook)
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
+
         loginGoogle.setOnClickListener {
-            val dialog = AlertDialog.Builder(this)
-            dialog.apply {
-                // tiêu đề của dialog
-                setTitle("Thông báo")
-                // Nội dung của dialog
-                setMessage("Chức năng đang phát triển !")
-                // Nếu người dùng bấm OK dialog sẽ ẩn đi
-                setNegativeButton("OK"){ dialogInterface: DialogInterface, i: Int ->
-                    dialogInterface.dismiss()
-                }
-            }
-            dialog.show()
+            dialogLogin()
         }
+
+        loginFacebook.setOnClickListener {
+            dialogLogin()
+        }
+
+        btnLogin.setOnClickListener {
+            dialogLogin()
+        }
+    }
+
+    private fun dialogLogin() {
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            // tiêu đề của dialog
+            setTitle("Thông báo")
+            // Nội dung của dialog
+            setMessage("Chức năng đang phát triển !")
+            // Nếu người dùng bấm OK dialog sẽ ẩn đi
+            setNegativeButton("OK") { dialogInterface: DialogInterface, i: Int ->
+                dialogInterface.dismiss()
+            }
+        }
+        dialog.show()
     }
 
     /*Hàm có chức năng xử lý khi người dùng

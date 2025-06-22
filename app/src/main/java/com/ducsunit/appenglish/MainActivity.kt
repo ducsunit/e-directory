@@ -60,6 +60,8 @@ class MainActivity : AppCompatActivity() {
         handleLayoutVocabulary()
         handleClickProfile()
         handleClickCourse()
+        handleClickCardVoca()
+        handleClickSupport()
         displayListUser()
         handleClickVip()
         handleClickRecentWord()
@@ -69,20 +71,6 @@ class MainActivity : AppCompatActivity() {
 
     // chuyển activity sang hobby word
     private fun handleLayoutHobbyWord() {
-//        binding.constraintLayoutPre.setOnClickListener {
-//            val dialog = AlertDialog.Builder(this)
-//            dialog.apply {
-//                setTitle("Thông báo")
-//
-//                setMessage("Chức năng đang phát triển")
-//
-//                setNegativeButton("OK") { dialogInterface: DialogInterface, i: Int ->
-//                    dialogInterface.dismiss()
-//                }
-//            }
-//            dialog.show()
-//        }
-
         binding.constraintLayoutHobby.setOnClickListener {
             val intentHobbyWord = Intent(this, HobbyWord::class.java)
             startActivity(intentHobbyWord)
@@ -98,25 +86,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun handleClickCardVoca() {
+        binding.constraintLayout2004.setOnClickListener {
+            dialogFeature()
+        }
+
+    }
 
     /*
     * Hàm có chức năng xử lý sự kiện khi người dụng click vào
     * hình ảnh VIP sẽ hiện ra một thông báo (AlertDialog)*/
     private fun handleClickVip() {
         binding.imgPremium.setOnClickListener {
-            val dialog = AlertDialog.Builder(this)
-            dialog.apply {
-                // tiêu đề dialog
-                setTitle("Thông báo")
-                // nội dung dialog
-                setMessage("Chức năng đang phát triển !")
-                // xử lí nút OK, người dùng bấm OK dialog sẽ ẩn đi
-                setNegativeButton("OK") { dialogInterface: DialogInterface, i: Int ->
-                    dialogInterface.dismiss()
-                }
-            }
-            // hiển thị dialog
-            dialog.show()
+            dialogFeature()
         }
     }
 
@@ -142,9 +124,34 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleClickCourse() {
         binding.imgCourses.setOnClickListener {
-            val intentCourses = Intent(this, CourseActivity::class.java)
-            startActivity(intentCourses)
+//            val intentCourses = Intent(this, CourseActivity::class.java)
+//            startActivity(intentCourses)
+            dialogFeature()
+
         }
+    }
+
+    private fun handleClickSupport() {
+        binding.imgSupport.setOnClickListener {
+            dialogFeature()
+
+        }
+    }
+
+    private fun dialogFeature() {
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            // tiêu đề dialog
+            setTitle("Thông báo")
+            // nội dung dialog
+            setMessage("Chức năng đang phát triển !")
+            // xử lí nút OK, người dùng bấm OK dialog sẽ ẩn đi
+            setNegativeButton("OK") { dialogInterface: DialogInterface, i: Int ->
+                dialogInterface.dismiss()
+            }
+        }
+        // hiển thị dialog
+        dialog.show()
     }
 
     /*Hàm có chức năng xử lý sự kiện khi người dùng click vào layout từ vựng
