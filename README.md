@@ -6,8 +6,19 @@
 E-Directory is an Android application developed to support English vocabulary learning. The app provides an interactive dictionary with diverse learning features, helping users expand their vocabulary effectively.
 
 ## 📸 App Screenshots
-![](./screenshots/Screenshot_20250613_152609.png) | ![](./screenshots/Screenshot_20250613_152639.png) | ![](./screenshots/Screenshot_20250613_152647.png) |
-![](./screenshots/Screenshot_20250613_152653.png) | ![](./screenshots/Screenshot_20250613_152701.png) | ![](./screenshots/Screenshot_20250613_152711.png) |
+
+<p align="center">
+  <img src="./screenshots/Screenshot_20250613_152609.png" width="30%" />
+  <img src="./screenshots/Screenshot_20250613_152639.png" width="30%" />
+  <img src="./screenshots/Screenshot_20250613_152647.png" width="30%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/Screenshot_20250613_152653.png" width="30%" />
+  <img src="./screenshots/Screenshot_20250613_152701.png" width="30%" />
+  <img src="./screenshots/Screenshot_20250613_152711.png" width="30%" />
+</p>
+
 
 ## ✨ Main Features
 
