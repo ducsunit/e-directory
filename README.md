@@ -7,17 +7,19 @@ E-Directory is an Android application developed to support English vocabulary le
 
 ## 📸 App Screenshots
 
-<p align="center">
-  <img src="./screenshots/manhinhchinh.png" width="30%" />
-  <img src="./screenshots/tuyeuthich.png" width="30%" />
-  <img src="./screenshots/tuganday.png" width="30%" />
-</p>
+<table>
+  <tr>
+    <td><img src="./screenshots/manhinhchinh.png" width="100%"/></td>
+    <td><img src="./screenshots/tuyeuthich.png" width="100%"/></td>
+    <td><img src="./screenshots/tuganday.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/tuvung.png" width="100%"/></td>
+    <td><img src="./screenshots/dongvat.png" width="100%"/></td>
+    <td><img src="./screenshots/chitietdongvat.png" width="100%"/></td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="./screenshots/tuvung.png" width="30%" />
-  <img src="./screenshots/dongvat.png" width="30%" />
-  <img src="./screenshots/chitietdongvat.png" width="30%" />
-</p>
 
 
 ## ✨ Main Features
