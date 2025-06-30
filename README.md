@@ -1,13 +1,5 @@
 # E-Directory - English Vocabulary Learning App
 
-[![Android CI](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/ci.yml)
-[![Code Quality](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/code-quality.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/code-quality.yml)
-[![Release](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/release.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest)
-
-> 📋 **CI/CD Documentation**: Xem chi tiết về GitHub Actions setup tại [.github/CICD_README.md](.github/CICD_README.md)
-
-<!-- Test -->
-
 ## 📱 Project Description
 
 E-Directory is an Android application developed to support English vocabulary learning. The app provides an interactive dictionary with diverse learning features, helping users expand their vocabulary effectively.
@@ -26,7 +18,6 @@ E-Directory is an Android application developed to support English vocabulary le
     <td><img src="./screenshots/chitietdongvat.png" width="100%"/></td>
   </tr>
 </table>
-
 
 ## ✨ Main Features
 
